@@ -1,0 +1,119 @@
+@import './common.scss';
+
+html,
+body {
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Noto Sans", Ubuntu, Cantarell, "Helvetica Neue", sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji";
+    font-size: 12px;
+    color: #081e40;
+    overflow-x: hidden;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+dl,
+dt,
+dd,
+p,
+td,
+th {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+label {
+    outline: none;
+}
+
+.hover-btn {
+    user-select: none;
+    cursor: pointer;
+
+    &:hover {
+        color: #3a84ff;
+    }
+}
+
+.router-link {
+    color: #3a84ff;
+
+    &:hover {
+        color: #699df4;
+    }
+}
+
+.hover-title {
+    &:hover {
+        color: #3a84ff;
+        cursor: pointer;
+    }
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-align-center {
+    display: flex;
+    align-items: center;
+}
+
+.g-flex {
+    display: flex;
+}
+
+:focus {
+    outline: none;
+}
+
+pre {
+    margin: 0px;
+
+    ::selection {
+        color: #fff;
+        background: rgb(50, 143, 255);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    height: 6px;
+    background: #f2f2f2;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 8px;
+    border-radius: 20px;
+    background-color: rgb(203 213 224 / 50%);
+
+    &:hover {
+        background-color: rgb(203 213 224 / 70%);
+    }
+
+    &:active {
+        background-color: rgb(203 213 224);
+    }
+}
