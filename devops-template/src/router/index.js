@@ -1,11 +1,9 @@
-const templateHome = () => import(/* webpackChunkName: 'templateHome' */'@/views')
+const home = () => import(/* webpackChunkName: 'templateHome' */'../views/home.vue')
 
 const routes = [
     {
-        path: 'template/:projectId?',
-        component: templateHome,
-        children: [
-        ]
+        path: 'template',
+        component: home
     }
 ]
 

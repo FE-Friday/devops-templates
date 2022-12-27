@@ -1,6 +1,6 @@
 module.exports = {
     owner: 'Canway',
-    repository: 'authorization',
+    repository: 'template',
     host: 'https://code.canway.net',
     commit: 'commit',
     issue: 'issue'

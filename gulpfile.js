@@ -1,4 +1,4 @@
-const { parallel, task } = require('gulp')
+const { src, dest, parallel, series, task } = require('gulp')
 const Ora = require('ora')
 const yargs = require('yargs')
 const argv = yargs.alias({
@@ -19,10 +19,10 @@ const argv = yargs.alias({
     'public': 'static resource'
 }).argv
 
-const { dist, env, lsVersion, scope } = argv
+const { dist, env, lsVersion, scope, public } = argv
 
 task('build', cb => {
-    const spinner = new Ora('building project').start()
+    const spinner = new Ora('building bk-ci frontend project').start()
     const scopeCli = scope && typeof scope === 'string'
         ? (scope.split(',').filter(Boolean).length > 1
             ? `--scope=devops-{${scope}}`
@@ -35,7 +35,7 @@ task('build', cb => {
             console.log(err)
             process.exit(1)
         }
-        spinner.succeed(`Finished building project`)
+        spinner.succeed(`Finished building bk-ci frontend project`)
         cb()
     })
 })

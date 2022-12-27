@@ -9,6 +9,6 @@ module.exports = (env, argv) => {
         },
         publicPath: '/template/',
         dist: '/template',
-        port: 8199
+        port: 8999
     })
 }

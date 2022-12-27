@@ -1,0 +1,417 @@
+$screenWidthList: (1280,1366,1400,1600,1920);
+@media (min-width:1601px) and (max-width:1920px){}
+@media (min-width:1401px) and (max-width:1600px){}
+@media (min-width:1367px) and (max-width:1400px){}
+@media (min-width:1281px) and (max-width:1366px){
+    /* .sidebar-conf .sidebar-nav > li > a{
+        padding: 8px 12px!important;
+    } */
+}
+@media (min-width: 1281px){
+    .side-toggle .gitlabconf-wrapper{ width: 81px !important; min-width: 81px !important;}
+    .side-toggle .tw-content .tw-header{padding-left: 25px !important;}
+    .side-toggle .gitlabconf-wrapper .sidebar-brand .brand-logo .brand-logo-name{display: none;}
+    // .side-toggle .gitlabconf-wrapper .sidebar-brand .sidebar-toggle{right: -14px;}
+    .side-toggle .gitlabconf-wrapper .sidebar-brand .sidebar-toggle>i{left: auto; right: 6px;}
+    .side-toggle .gitlabconf-wrapper .sidebar-brand .sidebar-toggle::after{left: auto; right: 6px;}
+    .side-toggle .sidebar-nav>li>a{padding: 8px 0; text-align: center;}
+    .side-toggle .sidebar-nav .sidebar-submenu{padding-left: 5px !important; padding-right: 5px !important;}
+    .side-toggle .sidebar-nav .sidebar-submenu>li>a{padding: 8px 0; text-align: center;}
+    .side-toggle .sidebar-nav>li .nav-text{position: absolute; top: 5px; left: 48px;z-index:10; white-space: nowrap; background-color: #191929; font-size: 12px; color: #fff; margin: 0; padding: 4px 10px; border-radius: 4px; transition:opacity .2s ease; opacity: 0; visibility: hidden;}
+    .side-toggle .sidebar-nav>li>a .nav-text{left: 62px;z-index:10;}
+    .side-toggle .sidebar-nav>li .nav-text::after{content: ''; position: absolute; left: -3px; top: 9px; width: 8px; height: 8px; background-color: #191929; transform: rotate(45deg);}
+    // .side-toggle .sidebar-nav a:hover .nav-text{opacity: 1; visibility: visible;}
+    .side-toggle .sidebar-nav .sidebar-switch>a>.nav-text{display: none;}
+  }
+  
+  @media (max-width: 1280px){
+    .gitlabconf-wrapper{ width: 81px !important; min-width: 81px !important;}
+    .tw-content .tw-header{padding-left: 25px !important;}
+    .gitlabconf-wrapper .sidebar-brand .brand-logo .block{display: none;}
+    .gitlabconf-wrapper .sidebar-brand .brand-logo .brand-logo-name{display: none;}
+    .gitlabconf-wrapper .sidebar-brand .sidebar-toggle{right: -14px;}
+    .gitlabconf-wrapper .sidebar-brand .sidebar-toggle>i{left: auto; right: 6px;}
+    .gitlabconf-wrapper .sidebar-brand .sidebar-toggle::after{left: auto; right: 6px;}
+    .sidebar-nav>li>a{padding: 8px 0; text-align: center;}
+    .sidebar-nav .sidebar-submenu{padding-left: 5px; padding-right: 5px;}
+    .sidebar-nav .sidebar-submenu>li>a{padding: 8px 0; text-align: center;}
+    .sidebar-nav>li .nav-text{position: absolute; top: 5px;z-index:10; left: 48px; white-space: nowrap; background-color: #191929; font-size: 12px; color: #fff; margin: 0; padding: 4px 10px; border-radius: 4px; transition:opacity .2s ease; opacity: 0; visibility: hidden; z-index: 30;}
+    .sidebar-nav>li>a .nav-text{left: 62px;}
+    .sidebar-nav>li .nav-text::after{content: ''; position: absolute; left: -3px; top: 9px; width: 8px; height: 8px; background-color: #191929; transform: rotate(45deg);}
+    // .sidebar-nav a:hover .nav-text{opacity: 1; visibility: visible;}
+    .sidebar-nav .sidebar-switch>a>.nav-text{display: none;}
+
+    /* 小屏幕下的菜单切换 */
+    .side-toggle .sidebar-wraper{position: fixed; top: 50px; left: 0; z-index: 110; background: #fff; width: 260px;}
+    .side-toggle .sidebar-backdrop{position: fixed; right: 0; top: 50px; bottom: 0; left: 0;  z-index: 100;background-color: rgba(0,0,0,0.5);}
+    .side-toggle .gitlabconf-wrapper .sidebar-brand .brand-logo .brand-logo-name{display: block;}
+    .side-toggle .gitlabconf-wrapper .sidebar-wraper .sidebar-brand .brand-logo>span{display: block!important;}
+    .side-toggle .gitlabconf-wrapper .sidebar-brand .brand-logo .block{display: block;}
+    .side-toggle .gitlabconf-wrapper .sidebar-brand .sidebar-toggle{right: 10px;}
+    .side-toggle .gitlabconf-wrapper .sidebar-brand .sidebar-toggle>i{left: 6px; right: auto;}
+    .side-toggle .gitlabconf-wrapper .sidebar-brand .sidebar-toggle::after{left: 6px; right: auto;}
+    .side-toggle .sidebar-nav>li>a{padding: 8px 12px; text-align: left;}
+    .side-toggle .sidebar-nav .sidebar-submenu{padding: 10px 0 10px 15px;}
+    .side-toggle .sidebar-nav .sidebar-submenu>li>a{padding: 8px 12px; text-align: center;}
+    .side-toggle .sidebar-nav>li .nav-text{position: static; z-index:10;top: auto; left: auto; white-space: nowrap; background-color: transparent; font-size: 14px; color: #737987; margin: 0 0 0 12px; padding: 0; border-radius: 0; transition:opacity 0s ease; opacity: 1; visibility: visible;display: none;}
+    .side-toggle .sidebar-nav>li>a .nav-text{left: auto;}
+    .side-toggle .sidebar-nav>li .nav-text::after{display: none;}
+    // .side-toggle .sidebar-nav a:hover .nav-text{opacity: 1; visibility: visible;}
+    .side-toggle .sidebar-nav .sidebar-switch>a>.nav-text{display: inline-block;}
+  }
+
+
+@media (max-width: 1480px){
+}
+
+
+@media (max-width: 1600px){
+   .choose-formwork-box .box-default-info{min-height: 350px;}
+  .guide-main .select-state{margin-top: 20px;}
+  .tw-backlog-row .tw-issue-col{width: 343px;}
+  .tw-backlog-row .tw-issue-col .issue-list-header .filter-select-box{width: 180px;}
+}
+
+@media (min-width: 1281px) and (max-width: 1366px) {
+    .kanban-stack {
+      width: 260px !important;
+    }
+  
+    .kanban-stack .kb-stack-head .head-left {
+      font-size: 14px !important;
+    }
+  
+    .kanban-board.lane
+      .kb-item-bodys
+      .kanban-board-body
+      .lane-row
+      .row-item
+      .column-box {
+      width: 260px !important;
+    }
+  
+    .kanban-board.lane
+      .kb-item-bodys
+      .kanban-board-body
+      .lane-row
+      .row-item
+      .column-box
+      .lane-stack-body
+      .lane-stack-box
+      .lane-stack-box-head {
+      font-size: 14px !important;
+    }
+  
+    // 看板编辑页面适配
+    .tw-content .kanban-edit-content {
+      .kanban-setup .kanban-edit .kanban-edit-body {
+        padding: 10px 20px 10px 20px;
+  
+        .form-group {
+          margin-bottom: 10px;
+          padding-right: 20px;
+        }
+  
+        .tips {
+          margin-left: -9px;
+        }
+      }
+      .kanban-module {
+        padding: 0 20px 20px 20px !important;
+        .kanban-module-content .kanban-board {
+          .backlog-issue {
+            width: 260px;
+  
+            img {
+              height: 150px;
+            }
+  
+            .backlog-issue-body {
+              padding: 10px;
+  
+              h3 {
+                margin-bottom: 5px;
+                font-size: 15px;
+              }
+            }
+  
+            .backlog-issue-foot {
+              height: 40px;
+              line-height: 40px;
+            }
+          }
+          .kanban-stack {
+            .kanban-stack-item {
+              width: 260px;
+            }
+          }
+  
+          .uncorresponding-state {
+            width: 260px;
+            padding: 20px 0 0 20px;
+          }
+        }
+      }
+    }
+  
+    .g-bk-dialog.extra {
+      .bk-dialog {
+        top: 50px;
+  
+        .bk-table.g-table.version-table {
+          .bk-table-body-wrapper.is-scrolling-none {
+            max-height: 100px !important;
+          }
+        }
+      }
+    }
+  
+    .list-item-top .top-left .name {
+      flex: 0 0 68% !important;
+    }
+  
+    .detail-item .cases .case-item .case-info .case-name {
+      flex: 0 0 73% !important;
+    }
+  }
+  @media (min-width: 1281px) {
+    .side-toggle .tw-sidebar {
+      width: 81px !important;
+      min-width: 81px !important;
+    }
+    .side-toggle .tw-content .tw-header {
+      padding-left: 25px !important;
+    }
+    .side-toggle .tw-sidebar .sidebar-brand .brand-logo .brand-logo-name {
+      display: none;
+    }
+    .side-toggle .tw-sidebar .sidebar-brand .sidebar-toggle {
+      right: -14px;
+    }
+    .side-toggle .tw-sidebar .sidebar-brand .sidebar-toggle > i {
+      left: auto;
+      right: 6px;
+    }
+    .side-toggle .tw-sidebar .sidebar-brand .sidebar-toggle::after {
+      left: auto;
+      right: 6px;
+    }
+    .side-toggle .sidebar-nav > li > a {
+      padding: 8px 0;
+      text-align: center;
+    }
+    .side-toggle .sidebar-nav .sidebar-submenu {
+      padding-left: 5px !important;
+      padding-right: 5px !important;
+    }
+    .side-toggle .sidebar-nav .sidebar-submenu > li > a {
+      padding: 8px 0;
+      text-align: center;
+    }
+    .side-toggle .sidebar-nav > li .nav-text {
+      position: absolute;
+      top: 5px;
+      left: 48px;
+      z-index: 10;
+      white-space: nowrap;
+      background-color: #191929;
+      font-size: 12px;
+      color: #fff;
+      margin: 0;
+      padding: 4px 10px;
+      border-radius: 4px;
+      transition: opacity 0.2s ease;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .side-toggle .sidebar-nav > li > a .nav-text {
+      left: 62px;
+      z-index: 10;
+    }
+    .side-toggle .sidebar-nav > li .nav-text::after {
+      content: '';
+      position: absolute;
+      left: -3px;
+      top: 9px;
+      width: 8px;
+      height: 8px;
+      background-color: #191929;
+      transform: rotate(45deg);
+    }
+    .side-toggle .sidebar-nav a:hover .nav-text {
+      opacity: 1;
+      visibility: visible;
+    }
+    .side-toggle .sidebar-nav .sidebar-switch > a > .nav-text {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 1280px) {
+    .tw-wrapper .tw-sidebar {
+      width: 81px !important;
+      min-width: 81px !important;
+    }
+    .tw-wrapper .tw-content .tw-header {
+      padding-left: 25px !important;
+    }
+    .tw-sidebar .sidebar-brand .brand-logo .brand-logo-name {
+      display: none;
+    }
+    .tw-sidebar .sidebar-brand .sidebar-toggle {
+      right: -14px;
+    }
+    .tw-sidebar .sidebar-brand .sidebar-toggle > i {
+      left: auto;
+      right: 6px;
+    }
+    .tw-sidebar .sidebar-brand .sidebar-toggle::after {
+      left: auto;
+      right: 6px;
+    }
+    .sidebar-nav > li > a {
+      padding: 8px 0;
+      text-align: center;
+    }
+    .sidebar-nav .sidebar-submenu {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .sidebar-nav .sidebar-submenu > li > a {
+      padding: 8px 0;
+      text-align: center;
+    }
+    .sidebar-nav > li .nav-text {
+      position: absolute;
+      top: 5px;
+      z-index: 10;
+      left: 48px;
+      white-space: nowrap;
+      background-color: #191929;
+      font-size: 12px;
+      color: #fff;
+      margin: 0;
+      padding: 4px 10px;
+      border-radius: 4px;
+      transition: opacity 0.2s ease;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 30;
+    }
+    .sidebar-nav > li > a .nav-text {
+      left: 62px;
+    }
+    .sidebar-nav > li .nav-text::after {
+      content: '';
+      position: absolute;
+      left: -3px;
+      top: 9px;
+      width: 8px;
+      height: 8px;
+      background-color: #191929;
+      transform: rotate(45deg);
+    }
+    .sidebar-nav a:hover .nav-text {
+      opacity: 1;
+      visibility: visible;
+    }
+    .sidebar-nav .sidebar-switch > a > .nav-text {
+      display: none;
+    }
+    /* 小屏幕下的菜单切换 */
+    .side-toggle .sidebar-wraper {
+      position: fixed;
+      top: 50px;
+      left: 0;
+      z-index: 110;
+      background: #fff;
+      width: 260px;
+    }
+    .side-toggle .sidebar-backdrop {
+      position: fixed;
+      right: 0;
+      top: 50px;
+      bottom: 0;
+      left: 0;
+      z-index: 100;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .side-toggle .tw-sidebar .sidebar-brand .brand-logo .brand-logo-name {
+      display: block;
+    }
+    .side-toggle .tw-sidebar .sidebar-brand .sidebar-toggle {
+      right: 10px;
+    }
+    .side-toggle .tw-sidebar .sidebar-brand .sidebar-toggle > i {
+      left: 6px;
+      right: auto;
+    }
+    .side-toggle .tw-sidebar .sidebar-brand .sidebar-toggle::after {
+      left: 6px;
+      right: auto;
+    }
+    .side-toggle .sidebar-nav > li > a {
+      padding: 8px 12px;
+      text-align: left;
+    }
+    .side-toggle .sidebar-nav .sidebar-submenu {
+      padding: 10px 0 10px 15px;
+    }
+    .side-toggle .sidebar-nav .sidebar-submenu > li > a {
+      padding: 8px 12px;
+      text-align: left;
+    }
+    .side-toggle .sidebar-nav > li .nav-text {
+      position: static;
+      z-index: 10;
+      top: auto;
+      left: auto;
+      white-space: nowrap;
+      background-color: transparent;
+      font-size: 14px;
+      color: #737987;
+      margin: 0 0 0 12px;
+      padding: 0;
+      border-radius: 0;
+      transition: opacity 0s ease;
+      opacity: 1;
+      visibility: visible;
+    }
+    .side-toggle .sidebar-nav > li > a .nav-text {
+      left: auto;
+    }
+    .side-toggle .sidebar-nav > li .nav-text::after {
+      display: none;
+    }
+    .side-toggle .sidebar-nav a:hover .nav-text {
+      opacity: 1;
+      visibility: visible;
+    }
+    .side-toggle .sidebar-nav .sidebar-switch > a > .nav-text {
+      display: inline-block;
+    }
+  }
+  
+  @media (max-width: 1480px) {
+    .kanban-edit-body .form-group .form-content {
+      width: 58%;
+    }
+  }
+  
+  @media (max-width: 1600px) {
+    .kanban-edit-body .form-group .form-content {
+      width: 62%;
+    }
+    .choose-formwork-box .box-default-info {
+      min-height: 350px;
+    }
+    .guide-main .select-state {
+      margin-top: 20px;
+    }
+    .tw-backlog-row .tw-issue-col {
+      width: 343px;
+    }
+    .tw-backlog-row .tw-issue-col .issue-list-header .filter-select-box {
+      width: 180px;
+    }
+  }

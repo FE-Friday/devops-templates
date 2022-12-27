@@ -1,10 +1,73 @@
 @charset 'utf-8';
-.tag {
-    display: inline-block;
-    line-height: 28px;
-    height: 28px;
-    padding: 0 10px;
-    border-radius: 5px;
-    background-color: #dcdee5;
-    user-select: none;
+@import './common';
+@import './bkPatch';
+@import './adaptive';
+.bk-dialog-body {
+    min-height: 120px;
+}
+.cw-dialog {
+    .bk-dialog-header {
+        width: 100%;
+        position: relative;
+        top: -15px;
+        padding: 0 20px 15px;
+        border-bottom: 1px solid #EBEDF0;
+    }
+}
+.dialog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-title {
+        font-size: 16px;
+        font-weight: 500;
+        color: #222222;
+    }
+    .close-icon {
+        cursor: pointer;
+        font-size: 18px;
+        &:hover {
+            color: #3a84ff;
+            background-color: #3a84ff1a;
+        }
+    }
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-align-center {
+    display: flex;
+    align-items: center;
+}
+
+.flex-between-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-end-center {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.flex-1 {
+    flex: 1;
+    overflow: hidden;
+}
+
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

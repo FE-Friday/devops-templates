@@ -1,6 +1,8 @@
-.history
-.vscode
-.idea
-.DS_Store
-node_modules
-dist
+node_modules/
+formatCommitMsg.js
+frontend/*
+svg-sprites/dist
+package-lock.json
+yarn.lock
+yarn-error.log
+yarn.lock

@@ -1,0 +1,1015 @@
+// 对bk.scss进行扩展 覆盖
+
+@charset 'utf-8';
+@import './conf';
+
+.g-page{
+    padding-top: 15px;
+    &.bk-page .page-item.cur-page .page-button{
+        background: #3a84ff;
+        color: #fff;
+    }
+}
+
+.schedule-form{
+    ::v-deep .bk-form-item+.bk-form-item{
+        margin-top: 10px;
+    }
+
+    .inline {
+        display: flex;
+        justify-content: space-between;
+
+        .bk-form-item{
+            flex:1;
+            margin-top: 0;
+
+            &:first-child{
+                margin-right: 30px;
+            }
+        }
+    }
+
+    .line-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .half {
+        width: calc(50% - 15px);
+    }
+}
+
+.schedule-button.bk-button .bk-icon.left-icon{
+    margin-right: 5px;
+}
+
+.custom-table .bk-table-empty-text{
+    padding: 10px 0;
+}
+
+.g-slider-footer{
+    text-align: right;
+    padding: 0 24px;
+    line-height: 56px;
+    background-color: #fafbfd;
+    border-top: 1px solid #dcdee5;
+    border-radius: 2px;
+    height: 57px;
+}
+
+.bk-dialog-wrapper.schedule-bkInfo .bk-dialog .bk-dialog-content .bk-dialog-header .bk-dialog-header-inner{
+    font-size: 18px;
+}
+
+.cron-tab {
+    .bk-tab-label-wrapper .bk-tab-label-list .bk-tab-label-item{
+        padding: 0 20px;
+        min-width: auto;
+    
+        .bk-tab-label{
+            font-size: 12px;
+        }
+    }
+    .bk-tab-section{
+        .bk-form-radio{
+            font-size: 12px;
+        }
+    }
+}
+
+
+.bk-options .bk-option{
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.bk-options .bk-option-content .bk-option-content-default{
+    padding: 0;
+}
+
+.bk-options .bk-option-content .bk-option-name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    width: 100%;
+}
+
+.g-btn-icon.bk-button {
+    &.small {
+        .bk-icon{
+            font-size: 16px;
+            margin-right: 2px;
+        }
+    }
+
+    .bk-icon{
+        font-size: 18px;
+        top: 0;
+    }
+}
+
+.g-filter-input {
+    height: 30px;
+    .bk-form-input {
+      height: 30px;
+    }
+  }
+  
+  .g-checkbox {
+    width: 15px;
+    height: 15px;
+    padding: 3px;
+  
+    .bk-form-checkbox.is-checked .bk-checkbox:after {
+      width: 3px;
+      height: 7px;
+      left: 4px;
+    }
+  }
+  
+  .g-bk-select {
+    background: #fff;
+    &.bk-select.flex {
+      flex: 1;
+    }
+  }
+  
+  .g-bk-steps.bk-steps {
+    .bk-step {
+      .bk-step-number {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 26px;
+        font-weight: bold;
+      }
+      .bk-step-title {
+        line-height: 28px;
+        font-weight: 400;
+        font-size: 18px;
+      }
+  
+      &:after {
+        border-top: 2px dotted #6997ff;
+        background-color: transparent;
+        top: 28px;
+        left: 70%;
+        width: 60%;
+      }
+  
+      &.done .bk-step-number {
+        background-color: #fff;
+        color: #3a84ff;
+      }
+  
+      &.current .bk-step-number {
+        background-color: #3a84ff;
+        color: #fff;
+      }
+  
+      &.done:after {
+        background-color: transparent;
+      }
+  
+      &.current {
+        .bk-step-title {
+          color: #6997ff;
+        }
+      }
+    }
+  }
+  
+  .bk-dialog {
+    .bk-dialog-style {
+      border-radius: 10px;
+  
+      .bk-dialog-header .bk-dialog-title {
+        line-height: 30px;
+      }
+    }
+  
+    .bk-dialog-wrapper .bk-dialog-footer {
+      border-top: none;
+      background-color: transparent;
+    }
+    .bk-dialog-content {
+      /*  .bk-dialog-header{
+              text-align: center;
+          } */
+  
+      // .bk-dialog-footer {
+      //   text-align: center !important;
+      //   background-color: transparent;
+      //   border-top: none;
+      // }
+    }
+  
+    &.no-body-padding {
+      .bk-dialog-body {
+        padding: 0;
+      }
+    }
+  }
+  
+  .g-table.bk-table {
+    .bk-table-header-wrapper .bk-table-header .has-gutter tr th .cell {
+      color: #313238;
+      font-weight: normal;
+      background: #f0f1f5;
+    }
+  
+    &.specific {
+      &::before {
+        height: 0 !important;
+      }
+      .bk-table-header-wrapper .bk-table-header .has-gutter tr th .cell {
+        background: #fff;
+      }
+  
+      tr > td {
+        padding: 10px 0;
+      }
+  
+      th :hover {
+        background-color: #fff !important;
+      }
+  
+      tr:hover {
+        background-color: #fff;
+  
+        & > td {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+  
+  .g-checkbox-12 {
+    &.bk-form-checkbox .bk-checkbox-text {
+      font-size: 12px;
+    }
+  }
+  
+  .inline-search {
+    .bk-form-input {
+      height: 24px;
+      background: #fafbfd;
+      border: 1px solid #dcdee5;
+      opacity: 1;
+      border-radius: 2px;
+      font-size: 12px;
+      color: #c4c6cc;
+    }
+    .control-icon {
+      .bk-icon {
+        font-size: 10px;
+      }
+    }
+  }
+  
+  .g-switcher.bk-switcher {
+    &.bk-switcher-small {
+      width: 36px;
+      height: 18px;
+      line-height: 18px;
+  
+      &:after {
+        width: 14px;
+        height: 14px;
+      }
+  
+      &.is-checked {
+        &:after {
+          margin-left: -15px;
+        }
+      }
+    }
+  
+    &.is-checked {
+      background: #6997ff;
+    }
+  }
+  
+  .g-common-switch.bk-switcher {
+    &.is-checked {
+      background: #6997ff;
+    }
+  }
+  
+  .bk-form-checkbox.no-padding {
+    .bk-checkbox {
+      padding: 0 !important;
+    }
+  }
+  
+  .cricle-btn.bk-button {
+    border-radius: 18px !important;
+  }
+  
+  .g-show-info-form {
+    &.bk-form {
+      .bk-form-item {
+        .bk-form-content {
+          color: #333 !important;
+          height: 30px;
+          line-height: 30px;
+        }
+      }
+    }
+  }  
+
+// 通用全局样式
+.jmconf-app-container {
+    .autotest-content {
+      width: 100%;
+      height: 100%;
+      // height: calc(100% - #{$topHeader});
+      box-sizing: border-box;
+      padding: 15px;
+      overflow-y: auto;
+  
+      .content-inner {
+        width: 100%;
+        height: 100%;
+        border: 1px solid $borderColor;
+        background: #fff;
+        box-sizing: border-box;
+        display: flex;
+  
+        &-left {
+          height: 100%;
+          width: 300px;
+          border-right: 1px solid $borderColor;
+        }
+  
+        &-right {
+          height: 100%;
+          flex: 1;
+        }
+  
+        &-full-width {
+          width: 100%;
+  
+          .bk-tab2 {
+            width: 100%;
+            height: 100%;
+            border: none;
+  
+            .bk-tab2-nav {
+              background-color: $testBgColor;
+              border-bottom: 1px solid $borderColor;
+            }
+  
+            .bk-tab2-content {
+              height: calc(100% - #{$tableNavHeight});
+              position: relative;
+            }
+          }
+        }
+      }
+    }
+  
+    .bk-tab2 {
+      &.autotest-tab {
+        // border: none;
+        border: 1px solid $borderColor;
+        border-radius: 0;
+        background: transparent;
+        height: 100%;
+  
+        .bk-tab2-nav {
+          background-color: $testBgColor;
+          border-bottom: 1px solid $borderColor;
+        }
+  
+        .bk-tab2-content {
+          height: calc(100% - #{$tableNavHeight});
+          position: relative;
+        }
+  
+        &.api {
+          .bk-tab2-content {
+            padding: 15px;
+            box-sizing: border-box;
+          }
+  
+          .option-box {
+            // display: flex;
+            padding-bottom: 10px;
+          }
+        }
+      }
+    }
+  
+    .search-box {
+      display: flex;
+      box-sizing: border-box;
+      padding-bottom: 10px;
+  
+      .search-item {
+        margin-right: 6px;
+  
+        & > .bk-form-input,
+        & > .bk-selector {
+          width: 150px;
+          display: inline-block;
+        }
+  
+        & > .bk-date-range {
+          width: 210px;
+          display: inline-block;
+        }
+      }
+  
+      .handle-query {
+        margin-right: 4px;
+      }
+    }
+  
+    // 表格去重
+    .autotest-double-table-line.bk-table {
+      tbody {
+        tr:first-child {
+          td {
+            border: 1px solid transparent;
+            border-left: 1px solid #e9edee;
+            border-right: 1px solid #e9edee;
+            border-bottom: 1px solid #e9edee;
+          }
+        }
+      }
+    }
+  
+    // input
+    .bk-form-input {
+      &.middle {
+        width: 156px;
+      }
+  
+      &.large {
+        width: 200px;
+      }
+    }
+  
+    // 按钮
+    .bk-button {
+      &.circle {
+        border-radius: 5px;
+      }
+    }
+  
+    // 表格
+    .bk-table {
+      &.autotest-overflow {
+        thead > tr > th,
+        tbody > tr > td {
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+  
+        tbody > tr > td.noflow {
+          overflow: initial !important;
+          white-space: normal !important;
+        }
+      }
+  
+      thead > tr > th,
+      tbody > tr > td {
+        text-align: center;
+        vertical-align: middle;
+      }
+  
+      thead > tr > th > input[type='checkbox'] {
+        position: relative;
+        top: 5px;
+      }
+  
+      tbody > tr > td {
+        padding: 5px;
+        height: 40px;
+      }
+  
+      tbody > tr > td > input[type='checkbox'] {
+        position: relative;
+        top: 2px;
+      }
+  
+      // 操作图标
+      .opt-icon {
+        cursor: pointer;
+        font-size: 16px;
+        margin-right: 2px;
+  
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  
+    // 图表
+    .echarts {
+      width: 100%;
+      height: 100%;
+    }
+  
+    // 抽屉
+    .bk-sideslider {
+      .bk-sideslider-closer {
+        background-color: $primaryColor;
+      }
+  
+      .slider-content {
+        position: relative;
+      }
+  
+      // 抽屉中的底部操作按钮
+      .autotest-option-btns {
+        text-align: center;
+        padding: 30px 0;
+  
+        button {
+          border-radius: 5px;
+  
+          &:first-child {
+            margin-right: 50px;
+          }
+        }
+      }
+    }
+  
+    // 表单
+    .autotest-form-wrap {
+      width: 100%;
+      margin: 20px 10px;
+  
+      .form-line {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-bottom: 15px;
+  
+        .form-item {
+          flex: 1;
+          display: flex;
+          margin-right: 30px;
+  
+          &:last-child {
+            margin-right: 0;
+          }
+  
+          &-label {
+            width: 95px;
+            line-height: 36px;
+            margin-right: 5px;
+            text-align: right;
+            font-weight: 400;
+          }
+  
+          &-content {
+            flex: 1;
+          }
+        }
+      }
+    }
+  
+    // dialog
+    .autotest-dialog {
+      .bk-dialog-header {
+        padding: 0 30px;
+      }
+  
+      .bk-dialog-body {
+        padding: 15px !important;
+      }
+  
+      .bk-dialog-tool {
+        height: 15px;
+      }
+  
+      .bk-dialog-footer {
+        .bk-dialog-outer {
+          padding: 0;
+          text-align: center;
+  
+          & > button {
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+  
+      &.delete {
+        .bk-dialog-body {
+          text-align: center;
+          padding: 20px 20px 20px 40px;
+        }
+      }
+  
+      &.auto-flow {
+        .bk-dialog-style {
+          overflow: auto;
+          height: 100%;
+        }
+      }
+    }
+  
+    .autotest-table-opt-img {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      // float: left;
+  
+      &.middle {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  
+    .autotest-page {
+      &.bk-page {
+        justify-content: flex-end;
+        margin-top: 20px;
+      }
+    }
+  
+    // 用例手动执行  用例集执行
+    .autotest-execute-wraper {
+      padding: 20px;
+  
+      .excute-basic {
+        display: flex;
+        margin-bottom: 10px;
+  
+        .info-item {
+          flex: 1;
+          display: flex;
+  
+          .title {
+            width: 100px;
+            align-self: center;
+          }
+  
+          .content {
+            flex: 1;
+          }
+  
+          span {
+            line-height: 30px;
+          }
+        }
+      }
+  
+      .excute-detail {
+        .title {
+          font-size: 15px;
+          font-weight: 400;
+          padding-bottom: 10px;
+          border-bottom: 1px solid #ccc;
+        }
+  
+        .prefix {
+          margin-bottom: 10px;
+          font-size: 14px;
+          font-weight: 400;
+  
+          p {
+            display: inline-block;
+            color: #333;
+          }
+        }
+      }
+  
+      .excute-steps {
+        .step-title {
+          display: flex;
+          height: 40px;
+          line-height: 40px;
+          background-color: rgba(242, 242, 242, 1);
+          border: 1px solid #ccc;
+          color: #333;
+          text-align: center;
+  
+          li {
+            flex: 1;
+          }
+        }
+  
+        .step-content {
+          li {
+            display: flex;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-top: none;
+            padding: 10px 0;
+  
+            .step-item {
+              flex: 1;
+              padding: 0 5px;
+              align-self: center;
+  
+              .bk-selector-list {
+                .outside-ul li {
+                  padding: 0;
+                  border: none;
+                }
+              }
+            }
+          }
+        }
+      }
+  
+      .excute-desc {
+        display: flex;
+        margin: 10px 0 10px 10px;
+  
+        label {
+          width: 50px;
+          align-self: center;
+        }
+      }
+  
+      .excute-tab {
+        .bk-tab2 {
+          .bk-tab2-content {
+            padding: 15px 0 !important;
+          }
+        }
+      }
+  
+      .excute-opt-button {
+        text-align: center;
+      }
+  
+      .excute-progress {
+        display: flex;
+        margin-bottom: 10px;
+  
+        .info-item {
+          flex: 1;
+          display: flex;
+  
+          .title {
+            color: #333;
+            font-size: 13px;
+            width: 105px;
+          }
+  
+          .content {
+            font-size: 12px;
+  
+            .blue-tips {
+              color: #3c96ff;
+            }
+          }
+        }
+      }
+    }
+  
+    .bk-dropdown-menu {
+      &.autotest {
+        .bk-dropdown-list {
+          max-height: 76px !important;
+        }
+      }
+    }
+  
+    //错误提示
+    .autotest-danger-prompt {
+      color: #ff5656;
+    }
+  
+    // 置灰颜色
+    .autotest-disabled-color {
+      color: #c3cdd7;
+    }
+  
+    // 搜索框
+    .bk-form-input.autotest-search,
+    .bk-selector.autotest-search {
+      width: 150px;
+      display: inline-block;
+    }
+  
+    .bk-date-range.autotest-search {
+      width: 210px;
+      display: inline-block;
+    }
+  
+    .autotest-search-item {
+      & > label {
+        display: inline-block;
+        width: 85px;
+        text-align: right;
+      }
+    }
+  
+    .maxWidth {
+      width: calc(100% + #{$overflowWidth});
+    }
+  
+    .autotest-data-form {
+      .bk-form-item {
+        display: flex;
+        align-items: center;
+  
+        & > .bk-label {
+          width: 100px;
+          display: inline-block;
+        }
+  
+        & > .bk-form-content {
+          flex: 1;
+        }
+      }
+  
+      &.big-label {
+        .bk-form-item {
+          & > .bk-label {
+            width: 120px;
+          }
+        }
+      }
+    }
+  
+    .autotest-center-btns {
+      text-align: center;
+      padding: 20px 0;
+  
+      button {
+        border-radius: 5px;
+        margin-right: 10px;
+  
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  
+    .flex {
+      display: flex;
+    }
+  
+    .flexItem {
+      flex: 1;
+    }
+  
+    .alignCenter {
+      align-items: center;
+    }
+  
+    .alignStart {
+      align-items: flex-start !important;
+    }
+  
+    .no-padding-tab {
+      .bk-tab2-content {
+        padding: 15px !important;
+      }
+    }
+  
+    // 可选已选样式
+    .table-item {
+      &:first-child {
+        margin-right: 10px;
+      }
+  
+      .be-already-choiced {
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5px;
+        height: 40px;
+      }
+    }
+  
+    .has-content-padding-dialog {
+      .bk-sideslider-content {
+        padding: 50px 40px 0 40px;
+      }
+    }
+  
+    .mg50 {
+      margin-top: 50px;
+    }
+  
+    .mg0 {
+      margin: 0;
+    }
+  
+    .mg20 {
+      margin-top: 20px;
+    }
+  
+    .mg10 {
+      margin-top: 10px;
+    }
+  
+    .mr10 {
+      margin-right: 10px;
+    }
+  
+    .mb10 {
+      margin-bottom: 10px;
+    }
+  
+    .ml6 {
+      margin-left: 6px;
+    }
+  
+    .align-right {
+      text-align: right;
+    }
+  
+    .align-center {
+      text-align: center;
+    }
+  
+    .icon17 {
+      font-size: 17px;
+    }
+  
+    .table-option-column {
+      & > i {
+        margin-right: 4px;
+        cursor: pointer;
+  
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  
+    .bk-form-radio.autotest-small-radio {
+      margin-right: 5px !important;
+    }
+  
+    .success {
+      color: #ff0000;
+    }
+  
+    .active-color {
+      color: #3c96ff;
+    }
+  
+    // 超出隐藏显示省略号
+    .over-ellipsis {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      display: inline-block;
+    }
+  
+    .autotest-upload {
+      .all-file {
+        display: none;
+      }
+    }
+  
+    .ace-monokai {
+      &.lightBgc {
+        background: #fff;
+      }
+    }
+  }
+  
+  // 测试4样式重置
+  .jmconf-app-container{
+    // 表单label
+    .bk-form .bk-label{
+      font-weight: normal;
+    }
+    // 表格表头样式
+    .bk-table .bk-table-header tr th>.cell{
+       justify-content: center;
+      .bk-table-header-label{
+        font-weight: 700;
+        color: #63656e;
+      }
+    }
+  
+  }
+  .bk-selector-list {
+    ul {
+        li {
+            height: 30px;
+        }
+    }
+}
+// 标签输入框当行滚动
+.single-line.bk-tag-selector {
+    height: 30px;
+    .tag-list {
+        .tag {
+            width: 60px;
+        }
+        height: 30px;
+        display: flex;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        li{
+            flex-shrink: 0;
+        }
+    }
+}

@@ -36,15 +36,25 @@ module.exports = ({ entry, publicPath, dist, port = 8080, argv, env }) => {
                 },
                 {
                     test: /\.css$/,
-                    use: [MiniCssExtractPlugin.loader, 'css-loader']
+                    use: ['style-loader', 'css-loader']
                 },
                 {
                     test: /\.scss$/,
                     use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
                 },
                 {
+                    test: /\.svg$/,
+                    loader: 'svg-sprite-loader',
+                    include: [
+                        path.resolve('src')
+                    ]
+                },
+                {
                     test: /\.(png|jpe?g|gif|svg|webp|cur)(\?.*)?$/,
                     loader: 'url-loader',
+                    exclude: [
+                        path.resolve('src/assets/images/svg')
+                    ],
                     options: {
                         limit: 10000,
                         name: '[name].[ext]?[hash]'
@@ -71,6 +81,7 @@ module.exports = ({ entry, publicPath, dist, port = 8080, argv, env }) => {
             ]
         },
         plugins: [
+            // new BundleAnalyzerPlugin(),
             new VueLoaderPlugin(),
             new BundleWebpackPlugin({
                 dist: envDist,
