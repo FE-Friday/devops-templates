@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="13px" viewBox="0 0 14 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="数据管理和仪表盘" stroke="none" stroke-width="1" fill-rule="evenodd">
+        <g id="编组-45" transform="translate(0.702821, -0.003713)">
+            <g id="参数管理icon" transform="translate(0.654095, 0.000000)">
+                <polygon id="路径-5" points="1.20304786 0 1.20304786 7.9125728 2.13161929 7.9125728 2.13161929 0"></polygon>
+                <polygon id="路径-5备份" points="1.20304786 10.174114 1.20304786 13 2.13161929 13 2.13161929 10.174114"></polygon>
+                <polygon id="路径-7" points="5.38161929 4.98353039 5.38161929 13 6.31019073 13 6.31019073 4.98353039"></polygon>
+                <polygon id="路径-7备份" points="5.38161929 0 5.38161929 2.82588602 6.31019073 2.82588602 6.31019073 0"></polygon>
+                <polygon id="路径-8" points="9.56019073 0 9.56019073 7.9125728 10.4887622 7.9125728 10.4887622 0"></polygon>
+                <polygon id="路径-8备份" points="9.56019073 10.3139349 9.56019073 13 10.4887622 13 10.4887622 10.3139349"></polygon>
+                <circle id="椭圆形" cx="10.0244764" cy="9.09535712" r="1.16733358"></circle>
+                <circle id="椭圆形备份" cx="5.84590501" cy="3.88450101" r="1.16733358"></circle>
+                <circle id="椭圆形备份-2" cx="1.66733358" cy="9.09535712" r="1.16733358"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,226 @@
+.g-pointer {
+    cursor: pointer;
+}
+
+.avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 0;
+    overflow: hidden;
+    display: inline-block;
+    margin: -6px 0;
+
+    &-letter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        font-size: 12px;
+
+        &-green {
+            background-color: #30d878;
+        }
+
+        &-yellow {
+            background-color: #ffb400;
+        }
+
+        &-red {
+            background-color: #ff5656;
+        }
+
+        &-blue {
+            background-color: #3c96ff;
+        }
+    }
+}
+
+/*bk-popver 组件的li类名*/
+.dot-menu-trigger {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 0;
+    cursor: pointer;
+
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: currentColor;
+        -webkit-box-shadow: 0 -4px 0 currentColor, 0 4px 0 currentColor;
+        box-shadow: 0 -4px 0 currentColor, 0 4px 0 currentColor;
+    }
+
+    &:hover {
+        color: #3a84ff;
+        background-color: #dcdee5;
+    }
+}
+
+.dot-menu-list {
+    padding: 0 5px;
+
+    .dot-menu-item {
+        line-height: 30px;
+        padding: 0 10px;
+        cursor: pointer;
+
+        &:hover,
+        &.is-selected {
+            color: #3a84ff;
+            background: rgba(58, 132, 255, 0.1);
+        }
+
+        &.is-split {
+            border-top: 1px solid #cbd5e080;
+            padding: 2px 10px;
+        }
+    }
+}
+
+[id^="bk_pop"] {
+    .tippy-popper {
+        .tippy-tooltip {
+            padding: 8px 0;
+        }
+    }
+}
+
+.is-selected {
+    .bk-option-content-default {
+        .bk-option-icon {
+            top: 0px;
+        }
+    }
+}
+
+.bk-sideslider-title {
+    color: #3a84ff !important;
+}
+
+input.bk-form-input[readonly],
+.text-nowrap {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.bk-select {
+    &.is-default-trigger.is-unselected:before {
+        z-index: 1;
+    }
+
+    &.is-loading {
+        img {
+            z-index: 1;
+        }
+    }
+}
+
+.icon-btn {
+    height: 20px;
+    cursor: pointer;
+    color: #8797aa;
+    padding: 0 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        color: #3a84ff;
+        border-radius: 2px;
+        background: rgba(58, 133, 255, 0.1);
+    }
+
+    &.is-danger {
+        &:hover {
+            color: #c45a56;
+            background: rgba(234, 55, 54, 0.2);
+            border-radius: 2px;
+        }
+    }
+}
+
+.basic-slider {
+    .bk-sideslider-content {
+        padding: 20px;
+        max-height: unset !important;
+        height: calc(100% - 120px);
+    }
+
+    .bk-sideslider-footer {
+        padding: 0 30px;
+        justify-content: end;
+    }
+}
+
+.is-requied:after {
+    content: "*";
+    color: #e22d2d;
+    font-size: 14px;
+    position: absolute;
+}
+
+.input-loading {
+    .bk-loading-wrapper {
+        left: auto;
+        right: 10px;
+
+        .bk-loading-title {
+            margin: 0;
+        }
+    }
+}
+
+.bk-color-picker {
+    &.bk-color-picker-small {
+        height: 26px;
+        background: #fff;
+        border: 1px solid #cbd5e0;
+
+        &.bk-color-picker-show-dropdown {
+            border: 1px solid #3a84ff;
+            box-shadow: none;
+        }
+    }
+}
+
+.bk-compose-form-item {
+    .bk-input-number {
+        border: 1px solid #cbd5e0;
+    }
+}
+
+.u-collapse-item {
+    .bk-collapse-item-header {
+        font-weight: 500;
+        border-bottom: 1px solid #cbd5e080;
+        background: #fafbfd;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .bk-collapse-item-content {
+        padding: 0 20px;
+    }
+}
+
+.devops-logo {
+    display: flex;
+    align-items: center;
+}
+
+.devops-navigation-item-separator {
+    margin: 0 4px;
+}
